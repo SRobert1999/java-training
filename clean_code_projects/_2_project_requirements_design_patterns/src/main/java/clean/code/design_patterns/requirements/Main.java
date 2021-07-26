@@ -12,11 +12,27 @@ public class Main {
         p02.listenTo(coach);
 
         String[] instructions = new String[]{
-                "Running, Sit-ups, Push-ups"
+                "Running", "Sit-ups ", "Push-ups"
         };
 
         for(int i = 0; i < instructions.length; i++){
             coach.coaches(instructions[i]);
+        }
+
+
+
+        Client client = new Client();
+
+        Waiter w01 = new Waiter("Waiter");
+
+        w01.listenTo(client);
+
+        String[] order = new String[]{
+                "Ciorba de perisoare, Paste cu sos, Papanas"
+        };
+
+        for(int i = 0; i < order.length; i++){
+            client.client(order[i]);
         }
     }
 }
