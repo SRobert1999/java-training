@@ -56,4 +56,10 @@ public class Pawn {
         String eol = System.lineSeparator();
         return String.format("Current X: {1}{0}Current Y: {2}{0}Piece Color: {3}", eol, xCoordinate, yCoordinate, pieceColor);
     }
+
+    public void setChessBoard(ChessBoard chessBoard, int xCoordonate, int yCoordonate) {
+    }
+
+    public void setChessBoard(ChessBoard chessBoard, int xCoordonate, int yCoordonate, PieceColor pieceColor) {
+    }
 }
